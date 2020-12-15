@@ -10,6 +10,8 @@ module.exports = {
 	},
 	plugins: [new webpack.HotModuleReplacementPlugin()],
 	devServer: {
+		host: "localhost",
+		port: 3000,
 		contentBase: "./dist",
 		hot: true,
 		compress: true,
