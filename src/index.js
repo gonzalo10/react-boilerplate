@@ -1,11 +1,10 @@
-import _ from "lodash";
+import React from "react";
+import ReactDOM from "react-dom";
 
-function component() {
-	const element = document.createElement("div");
+import App from "./App";
 
-	element.innerHTML = _.join(["Hello", "webpack"], " ");
+const title = "My Minimal React Webpack Babel Setup";
 
-	return element;
-}
+ReactDOM.render(<App title={title} />, document.getElementById("app"));
 
-document.body.appendChild(component());
+module.hot.accept();
